@@ -1,0 +1,408 @@
+
+*{
+  padding : 0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: 'Poppins' , sans-serif;
+  cursor :pointer;
+ 
+}
+
+.container{
+  width : 100%;
+  height : 100%;
+ 
+
+}
+.header{
+  width :100%;
+  padding : 0px 50px;
+  margin:auto;
+  display:flex;
+  justify-content : space-between;
+  align-items: center;
+  background-color: black;
+}
+ 
+/* .mr{
+    margin-right: 2%; 
+  
+} */
+.menu{
+  list-style: none;
+  display :flex;
+}
+
+
+.menu ul.sub-menu{
+position: absolute;
+background-color:white;
+padding: 15px 0px;
+list-style: none;
+width: 100px;
+display: none;
+
+}
+.menu .item:hover ul.sub-menu{
+display: block;
+}
+.menu ul.sub-menu a{
+border-bottom: 1px solid rgb(51, 51, 51);
+
+}
+.menu ul.sub-menu li:last-child a{
+border: none;
+}
+
+
+
+
+
+
+.menu .item{
+  margin: 0px 35px;
+  text-align: justify;  
+  position: relative;
+}
+
+.menu .item a {
+  color :white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+  text-align: justify;
+
+  
+}
+.menu .item a:hover{
+  text-decoration: none;
+  color: darkgrey;
+  cursor: pointer;
+}
+.menu li{
+  position: relative;
+}
+.menu  ul.sub-menu{
+ position: absolute;
+ background-color: black;
+ padding: 15px 0px;
+ width: 100px;
+ border: 1px solid;
+
+
+}
+
+
+
+
+
+
+.actions{
+  display:flex;
+   
+}
+.actions .items{
+  margin-left: 22px;
+  background-color: white;
+ 
+
+}
+header{
+  min-height: 100px;
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+
+
+}
+header img{
+  height: 500px;
+  width: 60%;
+}
+.row{
+  padding-top: 116px ;
+  padding-bottom: 78px;
+  padding-left: 134px;
+  padding-right: 134px;
+}
+.row h2{
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+  color: brown;
+  
+}
+
+.box_footer{
+  margin-top:300px;
+}
+/* footer section starts */
+#footer {
+  font-family: BalloExtra;
+  height: auto;
+  padding-bottom: 40px;
+  background-image: linear-gradient(
+      rgba(51, 51, 51, 0.86),
+      rgba(51, 51, 51, 0.86)
+    );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+ 
+  margin-bottom: 200px;
+}
+#footer,
+.footer-left,
+.footer-right {
+  display: flex;
+}
+
+.footer-left,
+.footer-right {
+  margin-top: 3rem;
+}
+
+.footer-left {
+  padding-left: 12%;
+  align-items: center;
+  width: 65%;
+}
+.footer-right {
+  margin-top: 3.5rem;
+  gap: 3rem;
+  padding-right: 12%;
+  width: 35%;
+}
+
+#footer h3 {
+  font-family: BalooExtra;
+  text-align: start;
+  color: var(--yellow-color);
+}
+
+#footer p,
+#footer a {
+  font-family: Barlow;
+  color: #ffff;
+  text-align: start;
+}
+#footer a {
+  text-decoration: none;
+  display: block;
+  line-height: 1.8rem;
+}
+.footer-left .footer-logo {
+  width: 45%;
+  margin-right: 2.3rem;
+}
+
+.footer-logo img {
+  width: 100%;
+  object-fit: cover;
+  margin-right: auto;
+}
+#footer i {
+  color: var(--yellow-color);
+}
+
+#footer .card_1 {
+  width: 70%;
+}
+
+.card_1 {
+  width: 70%;
+  margin: 0;
+}
+
+.card_1 div {
+  display: flex;
+  align-items: center;
+}
+
+.card_1 div p,
+.card_1 p {
+  font-size: 0.9rem;
+  margin-left: 0.3rem;
+  line-height: 2rem;
+  display: block;
+  text-align: start;
+}
+
+.icons i {
+  font-size: 1.5rem;
+  margin-left: 1.3rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.4rem;
+  cursor: pointer;
+}
+
+#footer .images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#footer .image {
+  width: 8rem;
+  height: 2.5rem;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.2rem;
+}
+.image_3 {
+  height: 3rem !important;
+  width: 10rem;
+  margin-top: 0.5rem;
+}
+/* footer section ends */
+
+
+
+.btn{
+  font-size: 15px;
+  color: black;
+  background: gainsboro;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  outline: none;
+  margin-left: 1rem;
+  padding: 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn:hover{
+  color: red;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+
+
+
+
+
+
+
+
+ .list-products{
+display: flex;
+  width: 100%;
+  justify-content: space-around;
+
+}
+.items{
+
+  border: 1px brown solid;
+  border-radius: 6px;
+  
+  
+
+}
+.list-products .items img{
+  display: block;
+  margin: 0px auto;
+  margin-top: 17px;
+}
+.list-products .items .name{
+  text-align: center;
+  color: black;
+  font-weight: bold;
+
+}
+.list-products .items .price{
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  margin-top: 5px;
+}  
+
+
